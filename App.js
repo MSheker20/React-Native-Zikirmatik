@@ -10,7 +10,9 @@ const App = () => {
         <Text style={{color:'white', fontSize: 25}}>ZİKİRMATİK</Text>
       </View>
       <View style={{flex:16, backgroundColor:'yellow', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', }}>
+        <TouchableOpacity onPress={()=>setSayac(sayac+1)}>
         <Image source={require("./src/zikirmatik.png")} style={{width: 175, height: 210}} />
+        </TouchableOpacity>
       </View>
       <View style={{flex:2, backgroundColor: 'green', justifyContent: 'center', flexDirection:'row'}}>
           <Text style={{fontSize: 50}}>{sayac}</Text>
